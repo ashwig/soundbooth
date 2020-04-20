@@ -1,0 +1,239 @@
+{
+  /* JSON */
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  /* C and C++ */
+  "C_Cpp.autoAddFileAssociations": true,
+  "C_Cpp.configurationWarnings": "Enabled",
+  "C_Cpp.default.enableConfigurationSquiggles": true,
+  "C_Cpp.default.configurationProvider": "${default}",
+  "clang-format.language.cpp.style": "file",
+  "clang-format.style": "file",
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "clang-format.executable": "clang-format",
+  "clang.completion.enable": true,
+  "clang-format.language.cpp.enable": true,
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",
+  "C_Cpp.default.compilerArgs": [
+    "-std=gnu++2a",
+    "-Iinclude",
+    "-Itest/include",
+    "-isystem include/catch2",
+    "-isystem include/cxxopts",
+    "-isystem include/fakeit"
+  ],
+  "doxdocgen.generic.briefTemplate": "@brief {text} ",
+  "doxdocgen.generic.paramTemplate": "@param {param} ",
+  "doxdocgen.generic.returnTemplate": "@return {type} ",
+  "doxdocgen.file.fileTemplate": "@file {name}",
+  "doxdocgen.cpp.tparamTemplate": "@tparam {param} ",
+  "doxdocgen.generic.dateTemplate": "@date {date}",
+  "doxdocgen.file.copyrightTag": [
+    "@copyright Copyright (c) {year}"
+  ],
+  "doxdocgen.file.versionTag": "@version 0.1",
+  "doxdocgen.generic.authorTag": "@author {author} <{email}>",
+  /* Latex */
+  "[latex]": {
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.organizeImports": false
+    }
+  },
+  "[bibtex]": {
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.organizeImports": false
+    }
+  },
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": [
+        "%DOCFILE%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": [
+        "latexmk"
+      ]
+    },
+    {
+      "name": "pdflatex -> bibtex -> pdflatex*2",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+      ]
+    }
+  ],
+  "latex-workshop.bibtex-format.tab": "2 spaces",
+  "latex-workshop.bibtex-format.case": "lowercase",
+  "latex-workshop.bibtex-format.handleDuplicates": "Highlight Duplicates",
+  "latex-workshop.bibtex-format.sortby": [
+    "date"
+  ],
+  "latex-workshop.bibtex-format.surround": "Curly braces",
+  /* General Tools */
+  // Spell Checker
+  "cSpell.logLevel": "None",
+  "cSpell.ignorePaths": [
+    "**/package-lock.json",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/objects/**",
+    ".vscode",
+    ".clang-format",
+    "Doxyfile",
+    "README.md"
+  ],
+  "cSpell.enabledFiletypes": [
+    "cpp",
+    "latex",
+  ],
+  "cSpell.words": [
+    "autoreconf",
+    "dndebug",
+    "latexmk",
+    "wpragmas"
+  ],
+  /* Files */
+  "files.associations": {
+    "*.html": "html",
+    "*.txt": "cmake",
+    "*.in": "cpp",
+    "iostream": "cpp",
+    "cctype": "cpp",
+    "clocale": "cpp",
+    "cmath": "cpp",
+    "cstdarg": "cpp",
+    "cstddef": "cpp",
+    "cstdio": "cpp",
+    "cstdlib": "cpp",
+    "cstring": "cpp",
+    "ctime": "cpp",
+    "cwchar": "cpp",
+    "cwctype": "cpp",
+    "array": "cpp",
+    "atomic": "cpp",
+    "hash_map": "cpp",
+    "bit": "cpp",
+    "*.tcc": "cpp",
+    "bitset": "cpp",
+    "cfenv": "cpp",
+    "chrono": "cpp",
+    "codecvt": "cpp",
+    "complex": "cpp",
+    "condition_variable": "cpp",
+    "cstdint": "cpp",
+    "deque": "cpp",
+    "forward_list": "cpp",
+    "list": "cpp",
+    "map": "cpp",
+    "set": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "vector": "cpp",
+    "exception": "cpp",
+    "algorithm": "cpp",
+    "functional": "cpp",
+    "iterator": "cpp",
+    "memory": "cpp",
+    "memory_resource": "cpp",
+    "numeric": "cpp",
+    "optional": "cpp",
+    "random": "cpp",
+    "ratio": "cpp",
+    "regex": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "system_error": "cpp",
+    "tuple": "cpp",
+    "type_traits": "cpp",
+    "utility": "cpp",
+    "fstream": "cpp",
+    "future": "cpp",
+    "initializer_list": "cpp",
+    "iomanip": "cpp",
+    "iosfwd": "cpp",
+    "istream": "cpp",
+    "limits": "cpp",
+    "mutex": "cpp",
+    "new": "cpp",
+    "ostream": "cpp",
+    "shared_mutex": "cpp",
+    "sstream": "cpp",
+    "stdexcept": "cpp",
+    "streambuf": "cpp",
+    "thread": "cpp",
+    "cinttypes": "cpp",
+    "typeinfo": "cpp",
+    "valarray": "cpp",
+    "variant": "cpp",
+    "__bit_reference": "cpp",
+    "__config": "cpp",
+    "__debug": "cpp",
+    "__errc": "cpp",
+    "__functional_base": "cpp",
+    "__hash_table": "cpp",
+    "__locale": "cpp",
+    "__mutex_base": "cpp",
+    "__node_handle": "cpp",
+    "__nullptr": "cpp",
+    "__split_buffer": "cpp",
+    "__string": "cpp",
+    "__threading_support": "cpp",
+    "__tree": "cpp",
+    "__tuple": "cpp",
+    "compare": "cpp",
+    "ios": "cpp",
+    "locale": "cpp",
+    "queue": "cpp",
+    "stack": "cpp"
+  }
+}
